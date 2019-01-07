@@ -21,7 +21,7 @@
 
     </head>
 
-    <body background="https://media.giphy.com/media/xTiN0jHuzhUAo7yGsM/source.gif">
+    <body background="https://cdn.newsday.com/polopoly_fs/1.16199448.1516842207!/httpImage/image.jpeg_gen/derivatives/landscape_768/image.jpeg">
         <nav class="navbar navbar-expand-md navbar-light bg-light border">
             <a class="navbar-brand" href="/"><span>S</span><span>T</span><span>A</span><span>R</span><span>T</span><span><span></span>F</span><span>R</span><span>A</span><span>N</span><span>K</span></a>
             <button aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbar" data-toggle="collapse" type="button">
@@ -45,16 +45,6 @@
             </div>
         </nav>
 
-        {% if get_flashed_messages() %}
-            <header>
-                <div class="alert alert-primary border text-center" role="alert">
-                    {{ get_flashed_messages() | join(" ") }}
-                </div>
-            </header>
-        {% endif %}
-
-        <main class="container p-5">
-            {% block main %}{% endblock %}
     </body>
 
 </html>
